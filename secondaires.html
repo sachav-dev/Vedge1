@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Restaurant végétarien et/ou végan">
+    <meta name="theme-color" content="#317EFB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedge</title>
+    <link rel="stylesheet" href="./assets/css/fontsettings.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/button-order-now.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="shortcut icon" href="./assets/img/vedge.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/img/vedge.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/img/vedge.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="vedge-MastHead">
+        <!-- Logo supérieur -->
+        <a class="vedge-Logo">
+            <span class="vedge-Logo_Main">Vedge</span>
+            <span class="vedge-Logo_Secondary">Restaurant végétarien et/ou végan</span>
+        </a>
+        <!-- Le menu -->
+        <nav class="vedge-Nav">
+            <a class="vedge-Nav_Link" href="./index.html#menuslideshow">Accueil</a>
+            <a class="vedge-Nav_Link" href="./index.html#menu">Menu</a>
+            <a class="vedge-Nav_Link" href="./index.html#restos">Restaurants</a>
+            <a class="vedge-Nav_Link" href="./index.html#heures">Heures d'ouverture</a>
+            <a class="vedge-Nav_Link" href="./index.html#location-search">Trouver un restaurant</a>
+            <a class="vedge-Nav_Link" href="./index.html#reservation">Faire une réservation</a>
+            <a class="vedge-Nav_Link" href="./index.html#orderonline">Commande en ligne</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#philosophie">Notre philosophie</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#job">Carières</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#franchises">Franchises</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#presse">Presse</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Carrousel supérieur -->
+        <div id="menuslideshow" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#menuslideshow" data-slide-to="0" class="active"></li>
+                <li data-target="#menuslideshow" data-slide-to="1"></li>
+                <li data-target="#menuslideshow" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/slideshow-1.jpg" alt="Deux Mimosas" width="1000" height="350">
+                    <div class="carousel-caption">
+                        <button class="block">«Deux Mimosas» pour <span style="font-size:43px;">15$</span>, commandez maintenant!</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/slideshow-2.jpg" alt="Vins natures et biologiques, bières et cocktails botaniques" width="1000" height="350">
+                    <div class="carousel-caption">
+                        <button class="block">Vins natures et biologiques, bières et cocktails botaniques</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/slideshow-3.jpg" alt="Menu jour et soir" width="1000" height="350">
+                    <div class="carousel-caption">
+                        <button class="block">Une grande sélection de plats pour manger au bureau ou à la maison</button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#menuslideshow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#menuslideshow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- Block de notre philosophie -->
+        <section id="philosophie" class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Notre philosophie</h5>
+                <p>Les farines que nous utilisons pour faire les pâtes et le pain arrivent du Piémont, du «Mulino Marino», et sont moulues à la pierre.</p>
+                <p>Le pain et les gressins sont produits avec la levure mère, selon la méthode, ancienne et traditionnelle.
+                </p>
+                <p>Nous achetons seulement les ingrédients, tout est cuisiné et préparé par nos mains et avec notre cœur.
+                </p>
+                <p>Toutes les recettes sont originales.</p>
+                <p>Les ingrédients que nous choisissons sont d'excellente qualité et, la plupart, d'origine biologique.
+                </p>
+                <p>Les glaces et les sorbets sont fait maison, comme les pâtes fraîches, les desserts et les petits fours.
+                </p>
+                <p>Quand les producteurs n'ont pas la certification biologique nous vérifions que les produits sont faits avec des méthodes naturelles et sans l'utilisation de la chimie.</p>
+                <p>Les produits laitiers et leurs dérivés sont exclus de nombreuses préparations. </p>
+                <p>La plupart de nos plats ne contiennent pas de gluten.</p>
+                <p>
+                    «Il n'y a que les imbéciles qui ne soient pas gourmands. <br> On est gourmand comme on est artiste, comme on est poète.»
+                </p>
+            </div>
+        </section>
+
+        <!-- Bloc de franchises au Québec et de l'Ontario -->
+        <section class="vedge-Hero">
+
+            <div id="franchises" class="vedge-rightSideEnlargedRect">
+                <h1 class="vedge-Hero_Title">
+                    Franchises
+                    <span class="vedge-Hero_TextGroup">
+                        <i>au</i>
+                        Québec et
+                    </span>
+                    <span class="vedge-Hero_TextGroup">
+                        <i> de</i>
+                        l'Ontario
+                    </span>
+                    <span class="vedge-Region">Canada</span>
+                </h1>
+                <p class="vedge-Hero_Description">
+                    Vous voulez établir votre propre restaurant ? <br> Laissez-nous vous convaincre de développer votre propre franchise « Vedge » !
+                </p>
+                <a href="./franchise.html#val-jalbert" class="vedge-Hero_JumpLink">Contactez-nous pour ouvrir une franchise</a>
+            </div>
+        </section>
+
+        <!-- Bloc d'explication de la franchise -->
+        <section id="about" class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Les facteurs clés de succès en franchise</h5>
+                <p>
+                    Les franchisés auront un cran d’avance sur les entrepreneurs « classiques » car ils auront accès à des orientations pour rentabiliser leur affaire dès le début. <br> Ils pourront également prendre connaissance des études de marché
+                    effectuées directement par le réseau franchiseur qui permettra de connaître clairement <br> les attentes des clients suivant les secteurs d’activité et les zones géographiques d’installation.
+                </p>
+            </div>
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Par ailleurs</h5>
+                <p>
+                    Le franchiseur laisse tout de même suffisamment d’autonomie au dirigeant pour qu’il se sente l’âme d’un entrepreneur libre de gérer sa société à sa manière.
+                </p>
+            </div>
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Les avantages concurrentiels de la franchise</h5>
+                <p>
+                    Les franchisés pourront dès la création bénéficier de l’image de marque du réseau franchiseur. <br> Ainsi, une esthéticienne ouvrant une franchise « Body Minute » verra apparaître, <br> dès le premier jour d’ouverture de la boutique,
+                    une clientèle non pas par hasard ou par curiosité mais <br> parce qu’elle connaît le concept et qu’elle y adhère.
+                </p>
+            </div>
+            <div class="vedge-BlockForNotes_Major">
+                <h5 class="vedge-BlockForNotes_MinorTitle">De plus</h5>
+                <p>
+                    La franchise constitue également un gage de qualité et rend le projet plus fiable. <br> C’est la raison pour laquelle, le franchisé aura plus de facilité à recourir à un emprunt le cas échéant auprès d’une banque.
+                </p>
+                <p>
+                    Pensez-y donc si vous souhaitez vous lancer dans l’aventure de la création d’entreprise car malgré les contreparties financières, <br> la franchise reste un investissement intéressant et très attractif !
+                </p>
+            </div>
+        </section>
+
+        <!-- Bloc de presse -->
+        <section id="presse" class="vedge-Reviews">
+            <h1 class="vedge-Hero_Title">Presse</h1>
+            <div class="vedge-Review">
+                <blockquote>
+                    – TripAdvisor – a diffusé à la fin de la semaine dernière son classement annuel des meilleurs restaurants gastronomiques. Nous nous réjouissons de retrouver dans cette liste deux belles maisons traditionnelles de Vedge..
+                </blockquote>
+            </div>
+            <div class="vedge-Review">
+                <blockquote>
+                    – Vedge à Trois-Rivières, du chef Daniel Humm, est sacré meilleur restaurant de végétariens du monde pour la première fois en 2017, devant Osteria Francescana de Massimo Bottura (n°1 en 2016) et El Celler de Can Roca à Gérone (n°1 en 2015).
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Bloc de reconnaissance -->
+        <section id="new" class="vedge-New">
+            <h2 class="vedge-New_Headline">Reconnaissance</h2>
+            <p class="vedge-New_Intro">
+                Nous avons reçu une bonne reconnaissance dans la presse et de diverses communautés d'experts:
+            </p>
+            <ul class="vedge-New_Bullets">
+                <li class="vedge-New_Bullet">2016 - Le restaurant est honoré par TripAdvisor </li>
+                <li class="vedge-New_Bullet">2017 - Le restaurant Vedge de Trois-Rivières a été sacré meilleur restaurant de végétariens du monde au classement des «50 best», lors d'une cérémonie à Melbourne.</li>
+                <li class="vedge-New_Bullet">2018 - Le restaurant est honoré par Wine Spectator pour avoir une carte des vins exceptionnelle et afficher un profond engagement envers le vin</li>
+            </ul>
+            <div class="vedge-New_Media" style="text-align:center">
+                <img class="vedge-New_Img" src="./assets/img/tripadvisor_winespectator.png" alt="Honoré par Wine Spectator" />
+            </div>
+        </section>
+
+        <!-- Bloc de carières -->
+        <section id="job" class="vedge-StraightRect">
+            <h1 class="vedge-Hero_Title">Carières</h1>
+            <p class="vedge-Hero_Description">
+                Soyez le premier à connaître les nouvelles offres d'emploi Restaurant - Vedge
+            </p>
+        </section>
+
+        <!-- Bloc d'offres d'emploi -->
+        <section id="chapters" class="vedge-Chapters">
+            <ol class="vedge-Chapters_List">
+                <li class="vedge-Chapter">
+                    <h3 class="vedge-Chapter_Title">Pizza Maker (Toronto, ON) - 18 $ - 25 $ par heure - Temps Plein, Temps Partiel
+                    </h3>
+                    <p class="vedge-Chapter_Content">
+                        Nous sommes une Restaurant et prête à emporter et nous recherchons 1 ou 2 employés(e)s à TEMPS PLEIN OU PARTIELLE(disponible entre 10am-10pm, 5 jours par semaine ) pour travailler dans la cuisine en tant qu'artistes de pizza/sous-marin. Qualités requises:
+                        Travailleur, rapide, propre, proactif et porte attention aux détails. Expérience en pizzeria sera un atout. Nous sommes ouvert entre 11am-10pm tous les jours de la semaine, sauf samedi et dimanche (de 4pm à 10pm). Vous travaillerez
+                        sur des rotations différentes (matin ou soir). Merci pour votre intérêt, mais nous contacterons seulement ceux dont la candidature est retenue.
+                    </p>
+                </li>
+                <li class="vedge-Chapter">
+                    <h3 class="vedge-Chapter_Title">Aide cuisine (Val-Jalbert, QC) - 13,30 $ - 16,00 $ par heure - Temps Partiel
+                    </h3>
+                    <p class="vedge-Chapter_Content">
+                        Restaurant Végane est à la recherche d'un aide cuisinier ou d'une aide cuisinère pour combler un poste dans son équipe de cuisine.
+                        <br> <br> TÂCHES PRINCIPALES<br><br> - Couper les légumes<br> - Garder un bon niveau de l'inventaire avec rotation<br> - Faire le montage de l'assiette selon la commande<br> - Faire la vaiselle et tout d'autres tâche d'entretien<br>                        - Travail proprement, rapide<br> - Être ponctuel, travail en équipe.<br> - Capable d'utiliser le WOK.<br>
+                    </p>
+                </li>
+                <li class="vedge-Chapter">
+                    <h3 class="vedge-Chapter_Title">Préposé(e) au service alimentaire (Val-Jalbert, QC) - 15,00 $ - 16,00 $ par heure </h3>
+                    <p class="vedge-Chapter_Content">
+                        <br>Vedge recherche un Préposé(e) au service alimentaire pour joindre notre équipe à Trois-Rivières.
+                        <br>Chez Vedge, nous constituons une équipe dynamique de personnes venant d'horizons différents, dotées d'une expérience et de talents distinctifs, dans le but d’offrir l'exceptionnelle expérience client qui nous caractérise.
+                        <br>Si vous recherchez un milieu de travail agréable, convivial et trépidant, qui vous permettra de tirer une grande fierté de ce que vous faites, les possibilités que nous offrons sont alors infinies.
+                        <br>Les préposés au service alimentaire effectuent des tâches de routine en cuisine, comme la mise en place des stations de travail et des ingrédients, afin que les plats puissent être préparés.
+                        <br>Le/la candidat(e) idéal(e) travaillera efficacement au sein d’une équipe, dans un environnement dynamique et au rythme rapide.
+                        <br>
+                        <br>Horaire : Lundi au au vendredi
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Bloc de contact -->
+        <section id="contact" class="vedge-StraightRect">
+            <h1 class="vedge-Hero_Title">Nous contacter</h1>
+            <p class="vedge-Hero_Description">
+                Soyez le premier à connaître les nouvelles offres d'emploi Restaurant - Vedge
+            </p>
+        </section>
+
+        <!-- Bloc de formulaire -->
+        <div class="containercontact">
+            <div class="row">
+                <div class="column">
+                    <img src="./assets/img/map.jpg" alt="Carte du restaurant" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="./NewForm">
+                        <label for="fname">Prénom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Veuillez saisir votre prénom...">
+                        <label for="lname">Nom</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Veuillez saisir votre nom...">
+                        <label for="country">Branche</label>
+                        <select id="country" name="country">
+                            <option value="Trois-Rivieres">Trois-Rivières</option>
+                            <option value="Drummondville">Drummondville</option>
+                            <option value="Val-Jalbert">Val-Jalbert</option>
+                            <option value="Dix30">Dix30</option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="Berlin">Berlin</option>
+                        </select>
+                        <label for="subject">Le sujet</label>
+                        <textarea id="subject" name="subject" style="resize: none;" placeholder="Ecrivez votre message ici.."></textarea>
+                        <input type="submit" value="Soumettre">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Le footer -->
+        <footer class="vedge-Footer">
+            <section class="vedge-Footer_Block">
+                <h4 class="vedge-Footer_SectionTitle">
+                    À PROPOS
+                </h4>
+                <p class="vedge-Footer_Text">
+                    Le premier restaurant végétalien au Canada.
+                </p>
+
+                <small class="vedge-Copyright">
+                    &copy; Copyright 2021 Restaurant Végane. Tous les droits sont réservés.
+                </small>
+            </section>
+
+            <section class="vedge-Footer_Block vedge-Footer_Block-contact">
+                <h4 class="vedge-Footer_SectionTitle">Le contact</h4>
+                <a href="https://twitter.com/veganorest" class="vedge-Footer_Link">
+                    @benfrain on Twitter
+                </a>
+                <a href="https://github.com/veganorest" class="vedge-Footer_Link">
+                    @benfrain on GitHub
+                </a>
+                <p class="vedge-Footer_Text">info@restvegane.ca</p>
+            </section>
+        </footer>
+    </main>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+/*!
+ * Commande de bouton maintenant
+ */
+
+.block {
+    display: block;
+    height: 80px;
+    width: 100%;
+    background: orangered;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 170%;
+    line-height: 90px;
+    font-family: Arial;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
+}

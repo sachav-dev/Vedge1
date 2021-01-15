@@ -1,0 +1,98 @@
+/*!
+ * Galerie des restaurants
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+
+/* Site Web du centre */
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -16px;
+}
+
+
+/* Ajouter un rembourrage entre chaque colonne */
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+
+/* Créez trois colonnes égales qui flottent l'une à côté de l'autre */
+
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+    /* Masquer tous les éléments par défaut */
+}
+
+
+/* Effacer les flotteurs après les lignes */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Contenu */
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+/* La classe "show" est ajoutée aux éléments filtrés */
+
+.show {
+    display: block;
+}
+
+
+/* Style les boutons */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    /*  */
+    color: white;
+    /*  */
+}
+
+.btn-round-large {
+    border-radius: 8px
+}

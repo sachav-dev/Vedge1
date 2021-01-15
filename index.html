@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="Restaurant végétarien et/ou végan">
+    <meta name="theme-color" content="#317EFB" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedge</title>
+    <link rel="stylesheet" href="./assets/css/fontsettings.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/button-order-now.css" />
+    <link rel="stylesheet" href="./assets/css/imgrestorans.css" />
+    <link rel="stylesheet" href="./assets/css/table-menu.css" />
+    <link rel="stylesheet" href="./assets/css/double-carusel.css" />
+    <link rel="shortcut icon" href="./assets/img/vedge.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/img/vedge.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/img/vedge.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="vedge-MastHead">
+        <!-- Logo supérieur -->
+        <a class="vedge-Logo">
+            <span class="vedge-Logo_Main">Vedge</span>
+            <span class="vedge-Logo_Secondary">Restaurant végétarien et/ou végan</span>
+        </a>
+        <!-- Le menu -->
+        <nav class="vedge-Nav">
+            <a class="vedge-Nav_Link" href="./index.html#menuslideshow">Accueil</a>
+            <a class="vedge-Nav_Link" href="./index.html#menu">Menu</a>
+            <a class="vedge-Nav_Link" href="./index.html#restos">Restaurants</a>
+            <a class="vedge-Nav_Link" href="./index.html#heures">Heures d'ouverture</a>
+            <a class="vedge-Nav_Link" href="./index.html#location-search">Trouver un restaurant</a>
+            <a class="vedge-Nav_Link" href="./index.html#reservation">Faire une réservation</a>
+            <a class="vedge-Nav_Link" href="./index.html#orderonline">Commande en ligne</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#philosophie">Notre philosophie</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#job">Carières</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#franchises">Franchises</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#presse">Presse</a>
+            <a class="vedge-Nav_Link" href="./secondaires.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrousel supérieur -->
+        <div id="menuslideshow" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#menuslideshow" data-slide-to="0" class="active"></li>
+                <li data-target="#menuslideshow" data-slide-to="1"></li>
+                <li data-target="#menuslideshow" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/slideshow-1.jpg" alt="Deux Mimosas" width="1000" height="350">
+                    <div class="carousel-caption">
+                        <button class="block">«Deux Mimosas» pour <span style="font-size:43px;">15$</span>, commandez maintenant!</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/slideshow-2.jpg" alt="Vins natures et biologiques, bières et cocktails botaniques" width="1000" height="350">
+                    <div class="carousel-caption">
+                        <button class="block">Vins natures et biologiques, bières et cocktails botaniques</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/slideshow-3.jpg" alt="Menu jour et soir" width="1000" height="350">
+                    <div class="carousel-caption">
+                        <button class="block">Une grande sélection de plats pour manger au bureau ou à la maison</button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#menuslideshow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#menuslideshow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- Bloc de menu -->
+        <section id="menu" class="vedge-BlockForNotes">
+
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Menus</h5>
+                <p>
+                    Du lundi au vendredi, samedi et dimanche soir.
+                </p>
+                <table style="width:62%">
+                    <tr>
+                        <th>Pour commander</th>
+                        <th>Type de menu</th>
+                    </tr>
+                    <tr>
+                        <td>Du lundi au vendredi, samedi et dimanche soir</td>
+                        <td>Menu jour et soir</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi et dimanche de 10 h à 15 h</td>
+                        <td>Menu brunch</td>
+                    </tr>
+                    <tr>
+                        <td>Vins natures et biologiques, bières et cocktails botaniques</td>
+                        <td>Menu boissons</td>
+                    </tr>
+                    <tr>
+                        <td>Une grande sélection de plats pour manger au bureau ou à la maison</td>
+                        <td>Menu pour emporter</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Carrousel de menu -->
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="./assets/img/resto1.jpg" alt="L'intérieur du restaurant" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="./assets/img/resto2.jpg" alt="Repas au restaurant" style="width:100%">
+            </div>
+
+            <div class="mySlides1">
+                <img src="./assets/img/resto3.jpg" alt="Repas au restaurant" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <!-- Bloc de promotion -->
+        <section id="promotions" class="vedge-BlockForNotes">
+
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Profitez de nos promotions</h5>
+
+                <p style="font-size: 25px;"> Deux Mimosas pour 15$</p>
+                pendant toute l’heure du brunch.
+
+                <img src="./assets/img/deux-mimosas.jpg" alt="Deux Mimosas" style="width:100%">
+                <div class="vedge-BlueButton">
+                    <a href="#promotions" class="vedge-Buy_Link vedge-Buy_Link-packt center">Voir nos promotions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloc alimentaire sain -->
+        <section class="vedge-BlockForNotes">
+
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Bon au goût, bon pour la nature</h5>
+                <p></p>
+                <img src="./assets/img/bon_pour_la_nature.jpg" alt="Régime équilibré" style="width:50%">
+                <p></p>
+                <div class="vedge-BlueButton">
+                    <a href="#promotions" class="vedge-Buy_Link vedge-Buy_Link-packt center">Lisez le manifeste «Vedge»</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloc de botanique et décadent -->
+        <section class="vedge-BlockForNotes">
+
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Botanique et décadent</h5>
+                <p>
+                    Le concept de «Vedge» s’inscrit dans la vision de l’alimentation. <br> Il reflète notre volonté de ralentir la cadence, d’offrir des plats sains à une clientèle soucieuse de son bien-être et de l’environnement. <br> Une clientèle hédoniste
+                    qui mange avec plaisir et de façon responsable.
+                </p>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img src="./assets/img/botanique_decadent-1.jpg" alt="Botanique et décadent" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./assets/img/botanique_decadent-2.jpg" alt="Botanique et décadent" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="./assets/img/botanique_decadent-3.jpg" alt="Botanique et décadent" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <p style="text-align:center">Savourez les meilleurs plats dans le respect total de la nature.</p>
+
+        </section>
+
+        <!-- Bloc de cuisine artisanale -->
+        <section class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Cuisine artisanale</h5>
+                <p>
+                    Nous connaissons chaque ingrédient qui entre dans la composition de nos recettes.<br> Nous créons la plupart de nos recettes à partir de rien — rien que des ingrédients naturels, frais et savoureux.<br> Voilà qui fait la vraie beauté
+                    de notre cuisine!
+                </p>
+            </div>
+        </section>
+
+        <!-- Image des ingrédients -->
+        <img src="./assets/img/ingradients.jpg" class="btn-round-large" alt="Les ingrédients" style="width:1000px; margin:0 auto;">
+
+        <!-- Bloc de Écoresponsabilité  -->
+        <section class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Écoresponsabilité</h5>
+                <p>
+                    Amants de la nature, nous prônons le respect de la faune et de la flore.<br> C’est pourquoi notre salle à manger et notre cuisine respectent les standards de la pensée écoresponsable.
+                </p>
+            </div>
+        </section>
+
+        <!-- Image de grande taille (slideshow)-->
+        <img src="./assets/img/eco.jpg" class="btn-round-large" alt="ÉCORESPONSABILITÉ" style="width:1000px; margin:0 auto;">
+
+        <!-- Bloc de fournisseurs locaux  -->
+        <section class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Fournisseurs locaux</h5>
+                <p>
+                    Nous nous approvisionnons auprès d’artisans locaux, car nous estimons qu’une bonne cuisine dépend de la qualité de ses ingrédients. <br> Moins nos ingrédients voyagent, plus nous pouvons offrir à nos clients des plats qui se distinguent
+                    par leur fraîcheur, leur authenticité et leur qualité.<br> Le tout, en réduisant notre empreinte écologique et nos émissions de gaz carbonique.
+                </p>
+            </div>
+        </section>
+
+        <!-- Bloc de fournisseurs locaux  -->
+        <section id="restos" class="vedge-StraightRect" style="width:1000px; margin:0 auto;">
+            <h1 class="vedge-Hero_Title">Restaurants en vedette</h1>
+
+            <p class="vedge-Hero_Description">
+                Consultez la liste de nos restaurants & points de vente au Canada. Venez déguster des délicieux repas végétariens!
+                <br> Clients distribution: <strong>514 900-7777</strong>
+            </p>
+
+            <div class="vedge-New" style="text-align: center;">
+                <!-- Restaurant gallery grid -->
+                <div class="row">
+                    <div class="column quebec">
+                        <div class="content">
+                            <img src="./assets/img/trois-rivieres.jpg" class="btn-round-large" alt="Trois-Rivières" style="width:100%">
+                            <div class="vedge-BlueButton">
+                                <a href="#restos" class="vedge-Buy_Link vedge-Buy_Link-packt">Trois-Rivières</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column quebec">
+                        <div class="content">
+                            <img src="./assets/img/drummondville.jpg" class="btn-round-large" alt="Drummondville" style="width:100%">
+                            <div class="vedge-BlueButton">
+                                <a href="#restos" class="vedge-Buy_Link vedge-Buy_Link-packt">Drummondville</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column quebec">
+                        <div class="content">
+                            <img src="./assets/img/val-jalbert.jpg" class="btn-round-large" alt="Val-Jalbert" style="width:100%">
+                            <div class="vedge-BlueButton">
+                                <a href="#restos" class="vedge-Buy_Link vedge-Buy_Link-packt">Val-Jalbert</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column ontario">
+                        <div class="content">
+                            <img src="./assets/img/toronto.jpg" class="btn-round-large" alt="Toronto" style="width:100%">
+                            <div class="vedge-BlueButton">
+                                <a href="#restos" class="vedge-Buy_Link vedge-Buy_Link-packt">Toronto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ontario">
+                        <div class="content">
+                            <img src="./assets/img/dix30.jpg" class="btn-round-large" alt="Dix30" style="width:100%">
+                            <div class="vedge-BlueButton">
+                                <a href="#restos" class="vedge-Buy_Link vedge-Buy_Link-packt">Dix30</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column ontario">
+                        <div class="content">
+                            <img src="./assets/img/berlin.jpg" class="btn-round-large" alt="Berlin" style="width:100%">
+                            <div class="vedge-BlueButton">
+                                <a href="#restos" class="vedge-Buy_Link vedge-Buy_Link-packt">Berlin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
+                </div>
+            </div>
+        </section>
+        <br><br>
+
+        <!-- Bloc de heures d'ouverture  -->
+        <section id="heures" class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Heures d'ouverture</h5>
+                <p></p>
+                <table style="width:50%">
+                    <tr>
+                        <th>Jour de la semaine</th>
+                        <th>Horaires</th>
+                    </tr>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>11:30–22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>11:30–22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>11:30–22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>11:30–23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>11:30–23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>10:00–23:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>10:00–22:00</td>
+                    </tr>
+                </table>
+            </div>
+            <p></p>
+        </section>
+
+        <br><br>
+
+        <!-- Bloc de trouver un restaurant -->
+        <section id="location-search" class="vedge-StraightRect">
+            <h1 class="vedge-Mailing_Headline">Trouvez un restaurant «Vedge» près de chez vous</h1>
+            <div class="vedge-Mailing_IntroAndForm">
+                <label for="mailingInput" class="vedge-Mailing_Intro">
+                    Entrez votre ville ou votre code postal
+                </label>
+
+                <form class="vedge-Mailing_Form" action="/handle-form" method="post">
+                    <input id="mailingInput" class="vedge-Mailing_Input" placeholder="Recherche par ville ou code postal..." />
+                    <button type="submit" class="vedge-Mailing_Subscribe">Rechercher</button>
+                </form>
+            </div>
+        </section>
+
+        <br><br>
+
+        <!-- Bloc de trouver un restaurant en ligne -->
+        <div id="orderonline" class="vedge-Order">
+            <h5 class="vedge-BlockForNotes_MinorTitle">Commandez nos repas en ligne</h5>
+            <div class="container">
+                <img src="./assets/img/order.jpg" alt="Commande en ligne" style="width: 75vw; min-width: 330px;">
+            </div>
+            <br>
+            <p>
+                Tout cuit vous propose des repas prêts à manger surgelés de qualité traiteur, cuisinés au Québec et livrés gratuitement chez vous! AUCUN abonnement.
+            </p>
+
+            <div class="vedge-BlueButton">
+                <a href="#" class="vedge-Buy_Link vedge-Buy_Link-packt">Commande en ligne</a>
+            </div>
+        </div>
+
+        <br><br>
+        <!-- Bloc de réservation en direct -->
+        <section class="vedge-StraightRect">
+            <div id="reservation" class="vedge-Review">
+                <h1 class="vedge-Hero_Title">Réservation en direct</h1>
+                <p class="vedge-Hero_Description">
+                    Notre moteur de réservation est efficace. Il est conçu pour faciliter le processus de réservation et maximiser les ventes en direct. Réservation instantanée (avec ou sans paiement) ou demande de réservation, vous pouvez paramétrer le processus que vous
+                    souhaitez.
+                </p>
+                <a href="#new" class="vedge-Hero_JumpLink">Disponibilités de dernière minute</a>
+            </div>
+        </section>
+
+        <!-- Bloc de réservation de neuf personnes et plus -->
+        <section class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Neuf personnes et plus?</h5>
+
+                <div class="vedge-BlueButton">
+                    <a href="#" class="vedge-Buy_Link vedge-Buy_Link-packt">Consultez notre page pour les groupes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image des groupes -->
+        <img src="./assets/img/groupes.jpg" alt="Les groupes" style="width:100%;">
+
+        <!-- Bloc de réservation pour un groupe -->
+        <section class="vedge-BlockForNotes">
+            <div class="vedge-BlockForNotes_Minor">
+                <h5 class="vedge-BlockForNotes_MinorTitle">Réserver pour un groupe</h5>
+                <p>«Vedge» Val-Jalbert peut accueillir des groupes jusqu’à 24 personnes..</p>
+                <!-- <a href="#nenu"><strong>Menu</strong></a> -->
+                <p>Les groupes de 20 à 24 personnes ont accès à une carte de groupe qui réunit l’ensemble de nos meilleurs vendeurs.
+                    <br>Chaque personne à votre table sélectionnera au minimum une entrée et un plat.
+                </p>
+                <div class="vedge-BlueButton">
+                    <a href="#" class="vedge-Buy_Link vedge-Buy_Link-packt">Voir le menu de groupe</a>
+                </div>
+                <div class="vedge-BlueButton">
+                    <a href="#" class="vedge-Buy_Link vedge-Buy_Link-packt">Faites de réservation de groupe</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Le footer -->
+        <footer class="vedge-Footer">
+            <section class="vedge-Footer_Block">
+                <h4 class="vedge-Footer_SectionTitle">
+                    À PROPOS
+                </h4>
+                <p class="vedge-Footer_Text">
+                    Le premier restaurant végétalien au Canada.
+                </p>
+
+                <small class="vedge-Copyright">
+                    &copy; Copyright 2021 Restaurant Végane. Tous les droits sont réservés.
+                </small>
+            </section>
+
+            <section class="vedge-Footer_Block vedge-Footer_Block-contact">
+                <h4 class="vedge-Footer_SectionTitle">Le contact</h4>
+                <a href="https://twitter.com/veganorest" class="vedge-Footer_Link">
+                    @benfrain on Twitter
+                </a>
+                <a href="https://github.com/veganorest" class="vedge-Footer_Link">
+                    @benfrain on GitHub
+                </a>
+                <p class="vedge-Footer_Text">info@restvegane.ca</p>
+            </section>
+        </footer>
+    </main>
+
+    <script src="./assets/js/imgrestorans.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/double-carusel.js"></script>
+</body>
+
+</html>

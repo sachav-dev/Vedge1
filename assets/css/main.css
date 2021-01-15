@@ -1,0 +1,443 @@
+/*!
+ * Format de page général
+ */
+
+@font-face {
+    font-family: "Inter var experimental";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url("../fonts/Inter.var.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+}
+
+html {
+    box-sizing: border-box;
+    /* Des polices plus jolies pour OS X et iOS */
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    /*J'ajouterai notre propre marge à ces éléments au besoin.*/
+    margin: 0;
+    /*Je veux définir la taille de la police au besoin.*/
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/*SVG affiche par défaut: en ligne que je n'aime pas. Inline-block ou inline-flex rendra un espace blanc sur les éléments SVG en HTML (où nous aurions des définitions et des symboles) si le conteneur n'est pas une boîte flexible ou la taille de la police définie sur 0 pour écraser l'espace blanc */
+
+svg {
+    display: block;
+}
+
+img {
+    /*Faisons en sorte que les images se comportent de manière réactive. Ici, ils évolueront jusqu'à 100% de leur taille naturelle*/
+    max-width: 100%;
+    /*Faire afficher les images sous forme de bloc (UA par défaut est généralement en ligne)*/
+    display: block;
+}
+
+
+/*Définissons une police non variable par défaut, mais améliorons-la si le navigateur prend en charge une police variable*/
+
+body {
+    font-family: Inter, sans-serif;
+    border-top: 5px solid #b50404;
+    border-bottom: 5px solid #b50404;
+    background-image: url("../img/triangle_bg.png");
+}
+
+
+/* @supports (font-variation-settings: "wdth" 115) {
+    body {
+        font-family: "Inter var experimental";
+    }
+} */
+
+.vedge-MastHead {
+    display: flex;
+    flex-direction: column;
+}
+
+.vedge-Logo {
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vedge-Logo_Main {
+    font-family: "Oswald", sans-serif;
+    font-size: 46px;
+}
+
+.vedge-Logo_Secondary {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.vedge-Nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+.vedge-Nav_Link {
+    margin: 0 10px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #4a4a4a;
+    /*We want these buttons to have a decent touch area so they are easy to click/tap*/
+    display: inline-flex;
+    min-height: 45px;
+    align-items: center;
+    /*Styles needed for the button only*/
+    border: 0;
+    background: none;
+}
+
+.vedge-rightSideEnlargedRect {
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 94%);
+    background-color: #262c28;
+    padding: 80px 20px 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.vedge-Hero_Description {
+    font-size: 12px;
+    color: #dddddd;
+    line-height: 1.8;
+    margin-top: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #424242;
+}
+
+.vedge-Hero_JumpLink {
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+    padding: 0 15px;
+    border-radius: 33px;
+    border: 1px solid #089df4;
+    font-size: 13px;
+    color: #fff;
+    justify-content: center;
+    max-width: 300px;
+    margin: 40px auto;
+}
+
+.vedge-Hero_Title {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: #ebebeb;
+}
+
+.vedge-Hero_TextGroup {
+    position: relative;
+    display: inline-block;
+    line-height: 2;
+}
+
+.vedge-Hero_TextGroup i {
+    position: absolute;
+    left: 0;
+    bottom: calc(50% + 12px);
+    color: #86988c;
+    font-size: 12px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.vedge-Region {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 13px;
+    top: 40px;
+    right: 20px;
+}
+
+.vedge-BlockForNotes {
+    padding: 20px;
+}
+
+.vedge-BlockForNotes_Minor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+.vedge-BlockForNotesTitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.vedge-BlockForNotes_Minor p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.vedge-BlockForNotes_MajorTitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.vedge-BlockForNotes_Major {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+.vedge-BlockForNotes_Major p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.vedge-BlockForNotes_Major a {
+    color: #b50404;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.vedge-Order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.vedge-Buy_Link {
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #089df4;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    margin: 10px;
+}
+
+.vedge-Reviews {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    background-color: #222;
+    clip-path: polygon(0 0%, 100% 6%, 100% 94%, 0 100%);
+}
+
+blockquote {
+    font-size: 20px;
+    margin: 0;
+}
+
+.vedge-Review {
+    color: #fff;
+    font-family: "Noto Serif", serif;
+    padding: 10px 20px;
+}
+
+.vedge-Review p {
+    margin: 10px 0 40px;
+}
+
+.vedge-New {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.vedge-New_Headline {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.vedge-New_Intro {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.vedge-New_Bullet {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.vedge-StraightRect {
+    padding: 20px;
+    background-color: #262c28;
+}
+
+.vedge-Mailing_Headline {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.vedge-Mailing_Intro {
+    font-size: 12px;
+    color: #fff;
+}
+
+.vedge-Mailing_Form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #b50404;
+    border-radius: 33px;
+    height: 45px;
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.vedge-Mailing_Input {
+    border: 0;
+    display: flex;
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+.vedge-Mailing_Subscribe {
+    outline: 0;
+    color: #b50404;
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+    display: flex;
+    height: 100%;
+    border: 0;
+    align-items: center;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.vedge-Chapters {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.vedge-Chapters_List {
+    padding: 20px;
+    list-style: none;
+    counter-reset: li;
+    margin: 0;
+}
+
+.vedge-Chapter {
+    counter-increment: li;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.vedge-Chapter::before {
+    display: inline-block;
+    text-align: right;
+    width: 30px;
+    position: absolute;
+    top: -6px;
+    left: -39px;
+    content: counter(li);
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: #B50404;
+}
+
+.vedge-Chapter_Content {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.vedge-Chapter_Title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.vedge-Footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    background-color: #262C28;
+}
+
+.vedge-Footer_SectionTitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 20px 0 10px;
+}
+
+.vedge-Footer_Text {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.vedge-Copyright {
+    color: #dcdcdc;
+    margin: 20px 0;
+    font-size: 10px;
+}
+
+.vedge-Footer_Link {
+    color: #fff;
+    text-decoration-line: underline;
+    /* text-decoration-skip-ink: auto; */
+    font-size: 12px;
+    text-decoration-color: #aaa;
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+}

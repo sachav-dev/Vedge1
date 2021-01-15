@@ -1,0 +1,78 @@
+/*!
+ * Formulaire de contact
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Entrées de style */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #089df4;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #089df4;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* Style de la section contenant / contact */
+
+.containercontact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+
+/* Créez deux colonnes qui flottent à côté de l'autre */
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+/* Effacer les flotteurs après les colonnes */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Disposition réactive - lorsque l'écran mesure moins de 600 px de large, 
+   faites empiler les deux colonnes l'une sur l'autre plutôt que l'une à côté de l'autre 
+*/
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
